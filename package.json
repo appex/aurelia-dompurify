@@ -1,12 +1,12 @@
 {
-  "name": "aurelia-dompurify",
-  "description": "An Aurelia plugin project.",
+  "name": "@appex/aurelia-dompurify",
+  "description": "Use DOMPurify as Aurelia's sanitizer implementation.",
   "version": "0.1.0",
   "repository": {
-    "type": "???",
-    "url": "???"
+    "type": "git",
+    "url": "https://github.com/appex/aurelia-dompurify"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.21",
     "@types/node": "^14.14.35",
@@ -43,7 +43,7 @@
     "serve-static": "^1.14.1",
     "server-destroy": "^1.0.1",
     "socket.io": "^4.0.0",
-    "text": "requirejs/text",
+    "text": "github:requirejs/text",
     "ts-jest": "^26.5.4",
     "typescript": "^4.2.3"
   },
@@ -107,5 +107,15 @@
     "aurelia-logging": "^1.5.2",
     "aurelia-templating-resources": "^1.13.1",
     "dompurify": "^2.2.8"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "security",
+    "sanitizing",
+    "aurelia",
+    "dompurify"
+  ],
+  "author": "David A. Sjøen"
 }
