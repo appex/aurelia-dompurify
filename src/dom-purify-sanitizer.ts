@@ -1,6 +1,6 @@
-import { HTMLSanitizer } from "aurelia-templating-resources";
+import { HTMLSanitizer } from 'aurelia-templating-resources';
 import { getLogger } from 'aurelia-logging';
-import * as DOMPurify from "dompurify";
+import * as DOMPurify from 'dompurify';
 
 let needsToNotify = true;
 

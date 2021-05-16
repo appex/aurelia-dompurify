@@ -13,9 +13,9 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { HTMLSanitizer } from "aurelia-templating-resources";
+import { HTMLSanitizer } from 'aurelia-templating-resources';
 import { getLogger } from 'aurelia-logging';
-import * as DOMPurify from "dompurify";
+import * as DOMPurify from 'dompurify';
 var needsToNotify = true;
 var DOMPurifySanitizer = (function (_super) {
     __extends(DOMPurifySanitizer, _super);
