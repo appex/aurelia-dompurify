@@ -16,16 +16,16 @@ var __extends = (this && this.__extends) || (function () {
 import { HTMLSanitizer } from 'aurelia-templating-resources';
 import { getLogger } from 'aurelia-logging';
 import * as DOMPurify from 'dompurify';
-var needsToNotify = true;
+var domPurifyNotified = false;
 var DOMPurifySanitizer = (function (_super) {
     __extends(DOMPurifySanitizer, _super);
     function DOMPurifySanitizer() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     DOMPurifySanitizer.prototype.sanitize = function (input) {
-        if (needsToNotify) {
-            needsToNotify = false;
+        if (!domPurifyNotified) {
             getLogger('dompurify-sanitizer').debug("Using DOMPurify instead of Aurelia's default sanitizer");
+            domPurifyNotified = true;
         }
         return DOMPurify.sanitize(input);
     };

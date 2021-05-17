@@ -1,6 +1,8 @@
+import { HTMLSanitizer } from 'aurelia-templating-resources';
 import { DOMPurifySanitizer } from './dom-purify-sanitizer';
 export function configure(config) {
-    throw new Error("aurelia-dompurify can't yet be used as a plugin, see the docs for more info");
+    config.container.unregister(HTMLSanitizer);
+    config.singleton(HTMLSanitizer, DOMPurifySanitizer);
 }
 export { DOMPurifySanitizer };
 
