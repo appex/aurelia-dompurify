@@ -14,7 +14,7 @@ HTMLSanitizer['get'] = (container: Container) => {
 HTMLSanitizer['protocol:aurelia:resolver'] = true;
 
 SanitizeHTMLValueConverter['get'] = (container: Container) => {
-  return new SanitizeHTMLValueConverter(container.get(DOMPurifySanitizer));
+  return new SanitizeHTMLValueConverter(container.get(HTMLSanitizer));
 }
 SanitizeHTMLValueConverter['protocol:aurelia:resolver'] = true;
 

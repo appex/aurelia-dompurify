@@ -15,7 +15,7 @@ aurelia_templating_resources_1.HTMLSanitizer['get'] = function (container) {
 };
 aurelia_templating_resources_1.HTMLSanitizer['protocol:aurelia:resolver'] = true;
 aurelia_templating_resources_1.SanitizeHTMLValueConverter['get'] = function (container) {
-    return new aurelia_templating_resources_1.SanitizeHTMLValueConverter(container.get(dom_purify_sanitizer_1.DOMPurifySanitizer));
+    return new aurelia_templating_resources_1.SanitizeHTMLValueConverter(container.get(aurelia_templating_resources_1.HTMLSanitizer));
 };
 aurelia_templating_resources_1.SanitizeHTMLValueConverter['protocol:aurelia:resolver'] = true;
 

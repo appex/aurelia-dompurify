@@ -10,7 +10,7 @@ HTMLSanitizer['get'] = function (container) {
 };
 HTMLSanitizer['protocol:aurelia:resolver'] = true;
 SanitizeHTMLValueConverter['get'] = function (container) {
-    return new SanitizeHTMLValueConverter(container.get(DOMPurifySanitizer));
+    return new SanitizeHTMLValueConverter(container.get(HTMLSanitizer));
 };
 SanitizeHTMLValueConverter['protocol:aurelia:resolver'] = true;
 export { DOMPurifySanitizer };
