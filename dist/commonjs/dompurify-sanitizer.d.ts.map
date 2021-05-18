@@ -1,0 +1,1 @@
+{"version":3,"sources":["dompurify-sanitizer.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,8BAA8B,CAAC;AAE7D,OAAO,KAAK,SAAS,MAAM,WAAW,CAAC;AAIvC,qBAAa,kBAAmB,SAAQ,aAAa;IACnD,OAAc,aAAa,EAAE,SAAS,CAAC,MAAM,CAAC;IAEvC,QAAQ,CAAC,KAAK,EAAE,GAAG,EAAE,MAAM,CAAC,EAAE,SAAS,CAAC,MAAM,GAAG,GAAG;CAQ5D","file":"dompurify-sanitizer.d.ts","sourceRoot":"../../src/"}

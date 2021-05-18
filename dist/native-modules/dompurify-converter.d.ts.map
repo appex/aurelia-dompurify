@@ -1,0 +1,1 @@
+{"version":3,"sources":["dompurify-converter.ts"],"names":[],"mappings":";AAEA,OAAO,EAAE,kBAAkB,EAAE,MAAM,uBAAuB,CAAC;AAG3D,qBAEa,uBAAuB;IAEhC,OAAO,CAAC,kBAAkB;gBAAlB,kBAAkB,EAAE,kBAAkB;IAGhD,MAAM,CAAC,eAAe,EAAE,GAAG,EAAE,MAAM,EAAE,SAAS,CAAC,MAAM;CAGtD","file":"dompurify-converter.d.ts","sourceRoot":"../../src/"}
