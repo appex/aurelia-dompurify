@@ -18,6 +18,9 @@ var DOMPurifyValueConverter = (function () {
         this.domPurifySanitizer = domPurifySanitizer;
     }
     DOMPurifyValueConverter.prototype.toView = function (untrustedMarkup, config) {
+        if (untrustedMarkup === null || untrustedMarkup === undefined) {
+            return null;
+        }
         return this.domPurifySanitizer.sanitize(untrustedMarkup, config);
     };
     DOMPurifyValueConverter = __decorate([
