@@ -107,6 +107,7 @@
     ]
   },
   "dependencies": {
+    "@types/dompurify": "^2.2.2",
     "aurelia-logging": "^1.0.0",
     "aurelia-templating-resources": "^1.7.0",
     "dompurify": "^2.2.8"

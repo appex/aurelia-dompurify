@@ -1,8 +1,9 @@
 import { HTMLSanitizer, SanitizeHTMLValueConverter } from 'aurelia-templating-resources';
 import { DOMPurifySanitizer } from './dom-purify-sanitizer';
-export function configure(config) {
-    if (config.aurelia.resources['valueConverters']['sanitizeHTML']) {
-        config.aurelia.resources['valueConverters']['sanitizeHTML'] = config.container.get(SanitizeHTMLValueConverter);
+export function configure(frameworkConfiguration, config) {
+    DOMPurifySanitizer.defaultConfig = config;
+    if (frameworkConfiguration.aurelia.resources['valueConverters']['sanitizeHTML']) {
+        frameworkConfiguration.aurelia.resources['valueConverters']['sanitizeHTML'] = frameworkConfiguration.container.get(SanitizeHTMLValueConverter);
     }
 }
 HTMLSanitizer['get'] = function (container) {

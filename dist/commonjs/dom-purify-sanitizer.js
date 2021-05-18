@@ -30,7 +30,7 @@ var DOMPurifySanitizer = (function (_super) {
             aurelia_logging_1.getLogger('dompurify-sanitizer').debug("Using DOMPurify instead of Aurelia's default sanitizer");
             domPurifyNotified = true;
         }
-        return DOMPurify.sanitize(input);
+        return DOMPurify.sanitize(input, DOMPurifySanitizer.defaultConfig);
     };
     return DOMPurifySanitizer;
 }(aurelia_templating_resources_1.HTMLSanitizer));

@@ -4,9 +4,10 @@ exports.DOMPurifySanitizer = exports.configure = void 0;
 var aurelia_templating_resources_1 = require("aurelia-templating-resources");
 var dom_purify_sanitizer_1 = require("./dom-purify-sanitizer");
 Object.defineProperty(exports, "DOMPurifySanitizer", { enumerable: true, get: function () { return dom_purify_sanitizer_1.DOMPurifySanitizer; } });
-function configure(config) {
-    if (config.aurelia.resources['valueConverters']['sanitizeHTML']) {
-        config.aurelia.resources['valueConverters']['sanitizeHTML'] = config.container.get(aurelia_templating_resources_1.SanitizeHTMLValueConverter);
+function configure(frameworkConfiguration, config) {
+    dom_purify_sanitizer_1.DOMPurifySanitizer.defaultConfig = config;
+    if (frameworkConfiguration.aurelia.resources['valueConverters']['sanitizeHTML']) {
+        frameworkConfiguration.aurelia.resources['valueConverters']['sanitizeHTML'] = frameworkConfiguration.container.get(aurelia_templating_resources_1.SanitizeHTMLValueConverter);
     }
 }
 exports.configure = configure;
